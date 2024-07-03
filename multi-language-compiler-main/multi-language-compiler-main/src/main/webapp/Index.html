@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+button {
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	right: 100px;
+}
+.btndiv
+{
+display: block;
+}
+
+.codeTextArea {
+	white-space: pre-wrap;
+}
+.textareasdiv
+{
+	display : inline-block;
+}
+
+</style>
+<link type="stylesheet" href="CodeIDE.css"></link>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="POST" action="ExecuteCode">
+		<div class = "btndiv">
+		<label for="Languages">Choose a Language:</label> <select name="Languages" id="languageList">
+			<option value="Javascript">Javascript</option>
+			<option value="C++">C++</option>
+			<option value="C">C</option>
+		</select>
+		<button>Run</button>
+		</div>
+		<div class="textareasdiv">
+		
+		<textarea name="code" rows="40" cols="125" class="codeTextArea" spellcheck=false placeholder = "//Write Code here"></textarea>
+		<textarea name = "input" rows="40" cols="60" class="codeTextArea" spellcheck=false  placeholder = "//Enter input for your program if no input is there, keep it blank"></textarea>		
+		</div>
+	</form>
+</body>
+</html>
